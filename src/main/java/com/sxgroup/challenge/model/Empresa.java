@@ -11,7 +11,6 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.validator.constraints.br.CNPJ;
