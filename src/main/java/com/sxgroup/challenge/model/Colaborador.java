@@ -11,6 +11,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import org.hibernate.validator.constraints.br.CPF;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
@@ -21,6 +23,7 @@ public class Colaborador {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
+	@CPF
 	private String cpf;
 
 	@NotBlank(message = "O atributo NOME é Obrigatório e não pode utilizar espaços em branco!")
